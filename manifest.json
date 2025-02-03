@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Better-Nexus",
+  "version": "1.0",
+
+  "description": "Plein d'amélioration pour l'utilisation de duelingnexus",
+
+  "icons": {
+    "48": "icons/nexus-icon.ico",
+    "96": "icons/nexus-icon.ico"
+  },
+
+  "permissions": ["<all_urls>","activeTab","webRequest","tabs"],
+  
+  "browser_action": {
+    "default_icon": "icons/nexus-icon.ico",
+    "default_title": "Bigger-Nexus"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.duelingnexus.com/duel/*"],
+      "js": ["inscript.js"]
+    }
+  ]
+}
+
