@@ -3,7 +3,7 @@
   "name": "Better-Nexus",
   "version": "1.0",
 
-  "description": "Plein d'amélioration pour l'utilisation de duelingnexus",
+  "description": "Ajout d'un champ de recherche pour la sélection de votre deck lors d'un duel sur l'émulateur www.duelingnexus.com.",
 
   "icons": {
     "48": "icons/nexus-icon.ico",
