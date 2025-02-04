@@ -16,7 +16,7 @@
     document.getElementsByTagName('head')[0].appendChild(myScript);
     // console.log(browser.runtime.getURL('Better-Nexus/nexus.js'));
 
-    position = document.getElementById('game-room-deck-container-player1');
+    position = document.getElementById('game-room-current-action');
     deck_finder = document.createElement('input');
     position.insertBefore(deck_finder,position.firstChild)
     deck_finder.setAttribute('id','deck_finder');
