@@ -16,11 +16,14 @@
     document.getElementsByTagName('head')[0].appendChild(myScript);
     // console.log(browser.runtime.getURL('Better-Nexus/nexus.js'));
 
-    position = document.getElementById('game-room-current-action');
+    position = document.getElementById('game-room-player-ready-button-container');
+    finder_div = document.createElement('div');
+    finder_div.setAttribute('style','text-align:center;');
     deck_finder = document.createElement('input');
-    position.insertBefore(deck_finder,position.firstChild)
     deck_finder.setAttribute('id','deck_finder');
     deck_finder.setAttribute('oninput','show_one_hide_others(this.value.toUpperCase())');
+    finder_div.appendChild(deck_finder);
+    position.insertBefore(finder_div,position.firstChild)
     deck_finder.focus()
   }
 
